@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet, useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+  //jsxk
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <button onClick={() => navigate("/")}>main</button>
+        <button onClick={() => navigate("/context")}>context</button>
+        <button onClick={() => navigate("/student/1")}>student</button>
+      </div>
+      <div>
+        <Outlet />
+      </div>
+      <div>footer</div>
+    </>
   );
 }
 
