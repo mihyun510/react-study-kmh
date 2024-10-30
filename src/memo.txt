@@ -1,0 +1,56 @@
+1. redux, zustand > 전역관리 시.. context 대신...?
+   redux toolkit
+
+
+2. axios > http 요청 request..
+   휘발성 입니다.,상태값이 변경되면 없어져요..메모리상 어느 부분에 전역 변수에 넣어놓아야되요..
+
+   response 후 데이터를 재사용해야 되는 경우? 예를 들어 상세내용 데이터까지 같이 받았다면..? 재 요청안하고 다시 사용한다..그치,,
+   
+   리덕스 비동기영역만 분리해서 사용 > tanstack/react-query wow.,.,
+
+
+
+3. css module...
+   방식이 2가지 입니다.
+   1. css in js > styled-component, emotion
+                  js문법으로 접근합니다. 그러나 해석이 문제가 됨
+                  defer 옵션? 없으면 바로 다운로드? 그 아래 스크립트는 없는 상태.,
+                             있다면 다운로드를 받지만 스크립트를 모두 다운로드를 받은 후 실행.
+                  ssr 해결 안됨,.ㅁ.,ㅁ.,ㅁ..,
+
+   2. utility css > tailwindcss
+                    classcss 재공한 클래스 사용., 태그가 지저분.,
+
+
+
+4. webpack,vite? bundler
+   js파일,.,하나로.,띄어쓰기제거ㅓㅓ.,,코드암호화ㅏㅏㅏㅏㅏ
+   vite 는 next 지원을 안하지만 속도가 빨라요.,^^
+
+5. next? vercel 에서 만들었답니다.
+6. 리액트는 ssr 안됨 > next.js로 구현
+7. react-hook-form > form 다룰때 사용,.
+8. framer-motion > 애니메이션.,.,
+    swiper > 슬라이드 이미지 다루기.
+
+9. bootstrap, ant design, mui > 대표적인 css frame 제품
+   커스텀의 어려움..ㅜㅜㅜ
+   headless ui 로 대체 이것은 커스텀이 쉬워요,.아 기능만 있군요..스타일은 알아서 만들면 되니 더 좋을수도..?
+   shadcn-ui, radix-ui > css 없는 기능만 있는 라이브러리 
+10. 
+
+
+
+
+
+
+
+1. 전역관리..redux, zustand
+2. styled-component, tailwindcss
+3. api 호출 > axios
+4. react-hook-form
+5. framer,swiper > 애니메이션?
+
+
+
